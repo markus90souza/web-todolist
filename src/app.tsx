@@ -8,10 +8,11 @@ import PlusIcon from "./assets/icons/plus.svg?react";
 import SpinnerIcon from "./assets/icons/spinner.svg?react";
 import { Icon } from "./components/icon";
 import { Badge } from "./components/badge";
+import { Button } from "./components/button";
 
 const App = () => {
   return (
-    <>
+    <div className="flex gap-4 flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
       <h1 className="text-green-dark">Vite + React</h1>
       <Text as="p" variant="body-md-bold" className="text-pink-base">
         Edit <code>src/app.tsx</code> and save to test HMR updates.
@@ -34,7 +35,11 @@ const App = () => {
           5 DE 10
         </Badge>
       </div>
-    </>
+
+      <Button variant="primary" size="md" icon={PlusIcon}>
+        Nova Tarefa
+      </Button>
+    </div>
   );
 };
 
