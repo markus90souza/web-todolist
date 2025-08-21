@@ -10,6 +10,7 @@ import { Icon } from "./components/icon";
 import { Badge } from "./components/badge";
 import { Button } from "./components/button";
 import { Input } from "./components/input";
+import { ButtonIcon } from "./components/button-icon";
 
 const App = () => {
   return (
@@ -43,6 +44,12 @@ const App = () => {
 
       <div className="flex gap-2">
         <Input />
+      </div>
+
+      <div className="flex gap-2">
+        <ButtonIcon icon={TrashIcon} disabled />
+        <ButtonIcon icon={TrashIcon} variant="secondary" />
+        <ButtonIcon icon={TrashIcon} variant="tertiary" />
       </div>
     </div>
   );
