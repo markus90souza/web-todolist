@@ -9,6 +9,7 @@ import SpinnerIcon from "./assets/icons/spinner.svg?react";
 import { Icon } from "./components/icon";
 import { Badge } from "./components/badge";
 import { Button } from "./components/button";
+import { Input } from "./components/input";
 
 const App = () => {
   return (
@@ -39,6 +40,10 @@ const App = () => {
       <Button variant="primary" size="md" icon={PlusIcon}>
         Nova Tarefa
       </Button>
+
+      <div className="flex gap-2">
+        <Input />
+      </div>
     </div>
   );
 };

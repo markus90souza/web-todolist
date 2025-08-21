@@ -38,4 +38,4 @@ const Text: React.FC<TextProps> = ({
   );
 };
 
-export { Text, type textVariants };
+export { Text, textVariants };
